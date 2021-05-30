@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="chart-container">
+      <div id="chart-container">
         <img src="./charts/Raise 1/UTG 1-2 3bb.png" alt="" id="chart" />
       </div>
 
@@ -99,6 +99,12 @@
       const $root = document.querySelector("#root");
       const $chart = document.querySelector("#chart");
 
+      const $chartContainer = document.querySelector("#chart-container");
+
+      $chart.addEventListener("click", (event) => {
+        $chartContainer.classList.add("hidden");
+      });
+
       for (const [key, value] of Object.entries(structure)) {
         console.log(`${key}: ${value}`);
         let $category = document.createElement("li");
@@ -115,6 +121,7 @@
               .querySelectorAll(".active")
               .forEach((el) => el.classList.remove("active"));
             event.target.classList.add("active");
+            $chartContainer.classList.remove("hidden");
             $chart.src = `./charts/${key}/${escape(chartName)}.png`;
           });
 

@@ -11,8 +11,13 @@ body {
   align-items: center;
 }
 
-.chart-container {
+#chart-container {
   height: 375px;
+}
+
+#chart-container.hidden {
+  height: 0;
+  display: none;
 }
 
 #root {
@@ -48,4 +53,9 @@ ul.subcats li:hover {
 ul.subcats li.active {
   font-weight: bold;
   background-color: cyan;
+}
+
+img.hidden {
+  width: 0;
+  height: 0;
 }
