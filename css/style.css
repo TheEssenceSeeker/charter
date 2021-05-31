@@ -114,12 +114,6 @@ ul.subcats li.active {
   justify-content: center;
 }
 
-.footer > *:first-child {
-  /* margin-right: 220px; */
-  /* margin-left: 25%;
-  margin-right: 25%; */
-}
-
 .donation {
   cursor: pointer;
   /* border: 1px solid black; */
