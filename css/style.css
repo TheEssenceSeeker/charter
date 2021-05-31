@@ -33,6 +33,10 @@ body {
   --donationbackground: greenyellow;
 }
 
+.darktheme .donation {
+  background-image: url(../icons/dollar.svg);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -122,16 +126,12 @@ ul.subcats li.active {
   height: 17px;
   background-color: var(--donationbackground);
   border-radius: 50%;
-  background-image: url(/icons/dollar-green.svg);
+  background-image: url(../icons/dollar-green.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 
   transition: transform 0.5s ease;
-}
-
-.darktheme .donation {
-  background-image: url(/icons/dollar.svg);
 }
 
 .donation:hover {
