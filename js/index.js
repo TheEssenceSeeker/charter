@@ -5,6 +5,8 @@ const $chartContainer = document.querySelector('#chart-container')
 const $themeToggler = document.querySelector('#theme-toggler')
 
 const $donation = document.querySelector('.donation')
+const $donationModal = document.querySelector('#donationModal')
+const $donationModalClose = document.querySelector('.close')
 
 function setTheme(themeName, saveToLocalStorage = true) {
   if (!['light', 'dark'].includes(themeName)) {
@@ -67,8 +69,19 @@ for (const [key, value] of Object.entries(structure)) {
   $root.appendChild($category)
 }
 
+// Donation modal
+
 $donation.addEventListener('click', () => {
-  alert(
-    'Привет!\n\nЕсли тебе нравится пользоваться веб версией чартов, ты можешь поблагодарить меня за её создание.\n\nМои никнеймы в румах PS и 888: EcklerV (чёрный смайлик-супермен на аватарке).\n\nСпасибо!\n\nP.S. Каждый доллара доната увеличивает винрейт на 1bb/100 (disclaimer: это может быть неправдой) :D'
-  )
+  $donationModal.style.display = 'block'
 })
+
+$donationModalClose.addEventListener('click', () => {
+  $donationModal.style.display = 'none'
+})
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == $donationModal) {
+    $donationModal.style.display = 'none'
+  }
+}

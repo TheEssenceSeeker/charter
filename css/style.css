@@ -114,9 +114,10 @@ ul.subcats li.active {
   justify-content: center;
 }
 
-.footer > * {
-  margin-left: 100px;
-  margin-right: 100px;
+.footer > *:first-child {
+  /* margin-right: 220px; */
+  /* margin-left: 25%;
+  margin-right: 25%; */
 }
 
 .donation {
@@ -138,6 +139,14 @@ ul.subcats li.active {
   transform: rotate(360deg);
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -154,11 +163,23 @@ ul.subcats li.active {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  /* background-color: #fefefe; */
+  background-color: var(--bgcolor);
+  color: var(--textcolor);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content * {
+  -webkit-touch-callout: text; /* iOS Safari */
+  -webkit-user-select: text; /* Safari */
+  -khtml-user-select: text; /* Konqueror HTML */
+  -moz-user-select: text; /* Old versions of Firefox */
+  -ms-user-select: text; /* Internet Explorer/Edge */
+  user-select: text; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* The Close Button */
