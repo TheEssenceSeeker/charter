@@ -4,6 +4,8 @@ const $chart = document.querySelector('#chart')
 const $chartContainer = document.querySelector('#chart-container')
 const $themeToggler = document.querySelector('#theme-toggler')
 
+const $donation = document.querySelector('.donation')
+
 function setTheme(themeName, saveToLocalStorage = true) {
   if (!['light', 'dark'].includes(themeName)) {
     console.log('wrong theme name')
@@ -64,3 +66,9 @@ for (const [key, value] of Object.entries(structure)) {
 
   $root.appendChild($category)
 }
+
+$donation.addEventListener('click', () => {
+  alert(
+    'Привет!\n\nЕсли тебе нравится пользоваться веб версией чартов, ты можешь поблагодарить меня за её создание.\n\nМои никнеймы в румах PS и 888: EcklerV (чёрный смайлик-супермен на аватарке).\n\nСпасибо!\n\nP.S. Каждый доллара доната увеличивает винрейт на 1bb/100 (disclaimer: это может быть неправдой) :D'
+  )
+})

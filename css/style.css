@@ -3,6 +3,7 @@
   --textcolor: #000;
   --highlightcolor: cyan;
   --hightlightedtextcolor: #000;
+  --donationbackground: #000;
 }
 
 * {
@@ -28,8 +29,12 @@ body {
   --bgcolor: #323232;
   --textcolor: #fff;
   --highlightcolor: #2196f3;
-
   --hightlightedtextcolor: #fff;
+  --donationbackground: greenyellow;
+}
+
+.darktheme .donation {
+  background-image: url(/icons/dollar.svg);
 }
 
 .container {
@@ -99,4 +104,36 @@ ul.subcats li.active {
   font-weight: bold;
   background-color: var(--highlightcolor);
   color: var(--hightlightedtextcolor);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > * {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.donation {
+  cursor: pointer;
+  /* border: 1px solid black; */
+  width: 17px;
+  height: 17px;
+  background-color: var(--donationbackground);
+  border-radius: 50%;
+  background-image: url(/icons/dollar-green.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  transition: transform 0.5s ease;
+}
+
+.donation:hover {
+  transform: rotate(360deg);
 }
