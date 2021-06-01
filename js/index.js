@@ -60,6 +60,7 @@ for (const [key, value] of Object.entries(structure)) {
       event.target.classList.add('active')
       $chartContainer.classList.remove('hidden')
       $chart.src = `./charts/${key}/${escape(chartName)}.png`
+      window.scroll(0, 0)
     })
 
     $subList.appendChild($chartLink)
