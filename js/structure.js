@@ -143,6 +143,6 @@ const struct = {
       'vs 45% (2,5bb)',
       'vSB 45% (3bb)',
     ],
-    bonus: ['3bet vs fish'],
+    // bonus: ['3bet vs fish'],
   },
 }

@@ -17,7 +17,13 @@ const limit = urlParams.get('limit') || 'nl10'
 
 const structure = struct[limit]
 
-$limit.innerHTML = limit
+const nextLimit = limit === 'nl10' ? 'nl25' : 'nl10'
+
+$limit.innerHTML = `<a href="?limit=${nextLimit}" data-next-limit=${
+  '-&gt;' + nextLimit
+}>${limit}</a>`
+
+// $limit.setAttribute('data-next-limit', nextLimit)
 
 function setTheme(themeName, saveToLocalStorage = true) {
   if (!['light', 'dark'].includes(themeName)) {

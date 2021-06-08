@@ -150,6 +150,22 @@ ul.subcats li.active {
   font-size: 10px;
 }
 
+.limit a {
+  color: var(--textcolor);
+  text-decoration: none;
+}
+
+.limit a::after {
+  content: '';
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.limit:hover a::after {
+  content: attr(data-next-limit); /* '->nl25';*/
+  opacity: 1;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
