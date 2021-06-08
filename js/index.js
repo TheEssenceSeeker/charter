@@ -8,6 +8,17 @@ const $donation = document.querySelector('.donation')
 const $donationModal = document.querySelector('#donationModal')
 const $donationModalClose = document.querySelector('.close')
 
+const $limit = document.querySelector('#limit')
+
+// Reading GET parameters
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+const limit = urlParams.get('limit') || 'nl10'
+
+const structure = struct[limit]
+
+$limit.innerHTML = limit
+
 function setTheme(themeName, saveToLocalStorage = true) {
   if (!['light', 'dark'].includes(themeName)) {
     console.log('wrong theme name')
@@ -44,6 +55,7 @@ $chart.addEventListener('click', event => {
 })
 
 // Print chart categories tree from structure.js
+
 for (const [key, value] of Object.entries(structure)) {
   let $category = document.createElement('li')
   $category.innerHTML = `<h4>${capitalize(key)}</h4>`
@@ -59,7 +71,7 @@ for (const [key, value] of Object.entries(structure)) {
         .forEach(el => el.classList.remove('active'))
       event.target.classList.add('active')
       $chartContainer.classList.remove('hidden')
-      $chart.src = `./charts/${key}/${escape(chartName)}.png`
+      $chart.src = `./charts/${limit}/${key}/${escape(chartName)}.png`
       window.scroll(0, 0)
     })
 

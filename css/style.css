@@ -141,6 +141,13 @@ ul.subcats li.active {
   text-align: center;
 }
 
+.limit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 10px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
