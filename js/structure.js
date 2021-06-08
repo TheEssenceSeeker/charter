@@ -89,7 +89,6 @@ const struct = {
       '3bet vs 20%',
       '3bet vs 25%',
       '3bet vs 30%',
-      '3bet vs fish',
     ],
     'def vs 3bet': [
       'vs 3% IP',
@@ -144,5 +143,6 @@ const struct = {
       'vs 45% (2,5bb)',
       'vSB 45% (3bb)',
     ],
+    bonus: ['3bet vs fish'],
   },
 }
