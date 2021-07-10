@@ -108,6 +108,14 @@ ul.subcats li.active {
   color: var(--hightlightedtextcolor);
 }
 
+li.bonus {
+  margin-top: 13px;
+}
+
+li.bonus ul {
+  list-style-type: square;
+}
+
 .footer {
   width: 100%;
   display: flex;
@@ -162,7 +170,7 @@ ul.subcats li.active {
 }
 
 .limit:hover a::after {
-  content: attr(data-next-limit); /* '->nl25';*/
+  content: attr(data-next-limit);
   opacity: 1;
 }
 

@@ -64,7 +64,11 @@ $chart.addEventListener('click', event => {
 
 for (const [key, value] of Object.entries(structure)) {
   let $category = document.createElement('li')
-  $category.innerHTML = `<h4>${capitalize(key)}</h4>`
+  if (key[0] !== '!') {
+    $category.innerHTML = `<h4>${capitalize(key)}</h4>`
+  } else {
+    $category.classList.add('bonus')
+  }
 
   let $subList = document.createElement('ul')
   $subList.classList.add('subcats')
