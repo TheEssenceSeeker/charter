@@ -186,6 +186,7 @@ const struct = {
       'vs 13% BvB',
       'vs 15% BvB',
     ],
+    squeeze: ['sq reg+fish OOP', 'sq reg+fish IP'],
     'def vs 4bet': [
       'vs 1% IP',
       'vs 1,5% IP',
@@ -203,7 +204,7 @@ const struct = {
       'vs 5,5% OOP',
       'vs 6,5% OOP',
     ],
-    squeeze: ['sq reg+fish OOP', 'sq reg+fish IP'],
+
     '3bet SB': [
       'SB vs 10%',
       'SB vs 15%',
