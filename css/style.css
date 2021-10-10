@@ -152,7 +152,7 @@ li.bonus ul {
 }
 
 .limit {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   font-size: 10px;
