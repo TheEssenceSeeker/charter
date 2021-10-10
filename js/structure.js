@@ -210,6 +210,7 @@ const struct = {
       'SB vs 15%',
       'SB vs 20%',
       'SB vs 25%',
+      'SB vs 30%',
       'SB vs 45%',
     ],
     'def BB': [
