@@ -17,7 +17,8 @@ const limit = urlParams.get('limit') || 'nl10'
 
 const structure = struct[limit]
 
-const nextLimit = limit === 'nl10' ? 'nl25' : 'nl10'
+const limits = ['nl10', 'nl25', 'nl50']
+const nextLimit = limits[limits.indexOf(limit) + 1] || limits[0]
 
 $limit.innerHTML = `<a href="?limit=${nextLimit}" data-next-limit=${
   '-&gt;' + nextLimit
