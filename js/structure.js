@@ -166,6 +166,7 @@ const struct = {
       '3bet vs 30%',
     ],
     'def vs 3bet': [
+      'vs 2% IP',
       'vs 3% IP',
       'vs 4% IP',
       'vs 5% IP',
@@ -175,6 +176,7 @@ const struct = {
       'vs 11% IP',
       'vs 13% IP',
       'vs 15% IP',
+      'vs 2% OOP',
       'vs 3% OOP',
       'vs 4% OOP',
       'vs 5% OOP',
@@ -186,7 +188,15 @@ const struct = {
       'vs 13% BvB',
       'vs 15% BvB',
     ],
+    'def vs squeeze': [
+      'vs 4%', 
+      'vs 6%', 
+      'vs 8%', 
+      'vs 10%', 
+      'vs 12%'
+    ],
     squeeze: ['sq reg+fish OOP', 'sq reg+fish IP'],
+    
     'def vs 4bet': [
       'vs 1% IP',
       'vs 1,5% IP',
@@ -204,7 +214,6 @@ const struct = {
       'vs 5,5% OOP',
       'vs 6,5% OOP',
     ],
-
     '3bet SB': [
       'SB vs 10%',
       'SB vs 15%',
@@ -224,6 +233,15 @@ const struct = {
       'vSB 35% (3bb)',
       'vSB 45% (3bb)',
     ],
-    'def vs squeeze': ['vs 4%', 'vs 6%', 'vs 8%', 'vs 10%', 'vs 12%'],
+    'def vs iso3bet': [
+      'vs 4% OOP',
+      'vs 6% OOP',
+      'vs 8% OOP',
+      'vs 10% OOP',
+      'vs 4% IP',
+      'vs 6% IP',
+      'vs 8% IP',
+      'vs 10% IP',
+    ],
   },
 }
