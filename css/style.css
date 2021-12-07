@@ -74,6 +74,10 @@ body {
   font-size: 13px;
 }
 
+#root li {
+  break-inside: avoid;
+}
+
 ul {
   margin: 0;
 }
