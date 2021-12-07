@@ -214,7 +214,7 @@ const struct = {
     //   'vs 5,5% OOP',
     //   'vs 6,5% OOP',
     // ],
-    'def vs 4bet (up to nl100)': [
+    'def vs 4bet (nl100-)': [
       'vs 1% IP',
       'vs 1,3% IP',
       'vs 1,6% IP',
