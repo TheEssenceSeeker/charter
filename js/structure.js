@@ -263,5 +263,6 @@ const struct = {
       'vs 8% IP',
       'vs 10% IP',
     ],
+    '!bonus': ['3bet vs fish 20% RFI'],
   },
 }
