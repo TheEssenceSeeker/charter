@@ -189,8 +189,8 @@ const struct = {
       'vs 15% BvB',
     ],
     'def vs squeeze': [
-      'vs 4%', 
-      'vs 6%', 
+      ['vs 4%', 'AA 4bet, KK push (95bb)'],
+      ['vs 6%', 'AKs, QQ call IP or push OOP <br> AKo 4bet/fold'],
       'vs 8%', 
       'vs 10%', 
       'vs 12%'

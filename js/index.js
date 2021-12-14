@@ -1,5 +1,6 @@
 const $root = document.querySelector('#root')
 const $chart = document.querySelector('#chart')
+const $comment = document.querySelector('#comment')
 
 const $chartContainer = document.querySelector('#chart-container')
 const $themeToggler = document.querySelector('#theme-toggler')
@@ -59,6 +60,7 @@ $themeToggler.addEventListener('change', e => {
 // Hide chart on click
 $chart.addEventListener('click', event => {
   $chartContainer.classList.add('hidden')
+  $comment.classList.remove('visible')
 })
 
 // Print chart categories tree from structure.js
@@ -73,7 +75,10 @@ for (const [key, value] of Object.entries(structure)) {
 
   let $subList = document.createElement('ul')
   $subList.classList.add('subcats')
-  value.forEach(chartName => {
+  value.forEach(chart => {
+    let [chartName, comment] = Array.isArray(chart) ? chart : [chart, '']
+    console.log(comment)
+
     let $chartLink = document.createElement('li')
     $chartLink.innerHTML = chartName
     $chartLink.addEventListener('click', event => {
@@ -83,6 +88,15 @@ for (const [key, value] of Object.entries(structure)) {
       event.target.classList.add('active')
       $chartContainer.classList.remove('hidden')
       $chart.src = `./charts/${limit}/${key}/${escape(chartName)}.png`
+
+      // Showing comment if exists
+      if (comment) {
+        $comment.classList.add('visible')
+      } else {
+        $comment.classList.remove('visible')
+      }
+      $comment.innerHTML = comment
+
       window.scroll(0, 0)
     })
 

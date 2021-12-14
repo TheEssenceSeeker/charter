@@ -43,6 +43,19 @@ body {
   align-items: center;
 }
 
+.comment-container {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  width: 350px;
+  text-align: center;
+  display: none;
+}
+
+.comment-container.visible {
+  display: block;
+}
+
 #chart-container {
   height: 365px;
 }
