@@ -195,7 +195,14 @@ const struct = {
       'vs 10%', 
       'vs 12%'
     ],
-    squeeze: ['sq reg+fish OOP', 'sq reg+fish IP'],
+    squeeze: [
+      // 'sq reg+fish OOP', 
+      // 'sq reg+fish IP', 
+      'sq vs 10% OOP', 
+      'sq vs 15% OOP', 
+      'sq vs 25% OOP', 
+      'sq vs 45% OOP'
+    ],
     
     // 'def vs 4bet': [
     //   'vs 1% IP',
