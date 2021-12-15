@@ -194,7 +194,7 @@ const struct = {
       ['vs 8%', 'Simplification: <br> AK, QQ push OOP'], 
       ['vs 10%', 'Simplification: <br> AK, QQ, JJ push OOP'], 
       ['vs 12%', 'Simplification: <br> AK, QQ-TT push OOP'],
-      ['vs 14', 'Simplification: <br> AK, QQ-99 push OOP']
+      ['vs 14%', 'Simplification: <br> AK, QQ-99 push OOP']
     ],
     squeeze: [
       // 'sq reg+fish OOP', 
