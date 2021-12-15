@@ -190,10 +190,11 @@ const struct = {
     ],
     'def vs squeeze': [
       ['vs 4%', 'AA 4bet, KK push (95bb)'],
-      ['vs 6%', 'AKs, QQ call IP or push OOP <br> AKo 4bet/fold'],
-      'vs 8%', 
-      'vs 10%', 
-      'vs 12%'
+      ['vs 6%', 'Simplification: <br> AKs, QQ call IP or push OOP <br> AKo 4bet/fold'],
+      ['vs 8%', 'Simplification: <br> AK, QQ push OOP'], 
+      ['vs 10%', 'Simplification: <br> AK, QQ, JJ push OOP'], 
+      ['vs 12%', 'Simplification: <br> AK, QQ-TT push OOP'],
+      ['vs 14', 'Simplification: <br> AK, QQ-99 push OOP']
     ],
     squeeze: [
       // 'sq reg+fish OOP', 
