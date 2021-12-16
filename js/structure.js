@@ -262,7 +262,7 @@ const struct = {
     ],
     'def BB': [
       'vs 10% (3bb)',
-      'vs 15% (3bb)',
+      ['vs 15% (3bb)', 'Purple: fold vs strong agressive opponents'],
       'vs 20% (2,5bb)',
       'vs 25% (2,5bb)',
       'vs 30% (2,5bb)',
