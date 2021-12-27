@@ -147,23 +147,23 @@ const struct = {
   },
   nl50: {
     'Raise 1': [
-      'UTG 1 2,5bb',
-      'UTG 2 2,5bb',
-      'UTG 3 2,5bb',
-      'LJ 2,5bb',
-      'HJ 2,5bb',
-      'CO 2,5bb',
-      'BU 2,1bb',
-      'SB 3bb',
-      'SB 2,5bb fe65%+',
+      ['UTG 1 2,5bb', '8,8%'],
+      ['UTG 2 2,5bb', '9,5%'],
+      ['UTG 3 2,5bb', '12,2%'],
+      ['LJ 2,5bb', '15,1%'],
+      ['HJ 2,5bb', '19,5%'],
+      ['CO 2,5bb', '26,7%'],
+      ['BU 2,1bb', '41,8%'],
+      ['SB 3bb', '41,8%'],
+      ['SB 2,5bb fe65%+', '56,9%'],
     ],
     '3bet IP': [
-      '3bet vs 10%',
-      '3bet vs 12,5%',
-      '3bet vs 15%',
-      '3bet vs 20%',
-      '3bet vs 25%',
-      '3bet vs 30%',
+      ['3bet vs 10%', '4,4%'],
+      ['3bet vs 12,5%', '5,4%'],
+      ['3bet vs 15%', '6,3%'],
+      ['3bet vs 20%', '7,7%'],
+      ['3bet vs 25%', '10,9%'],
+      ['3bet vs 30%', '12,7%'],
     ],
     'def vs 3bet': [
       'vs 2% IP',
@@ -253,12 +253,12 @@ const struct = {
       // 'vs 6,5% OOP',
     ],
     '3bet SB': [
-      'SB vs 10%',
-      'SB vs 15%',
-      'SB vs 20%',
-      'SB vs 25%',
-      'SB vs 30%',
-      'SB vs 45%',
+      ['SB vs 10%', '4,1%'],
+      ['SB vs 15%', '5,4%'],
+      ['SB vs 20%', '6,9%'],
+      ['SB vs 25%', '8,9%'],
+      ['SB vs 30%', '10,1%'],
+      ['SB vs 45%', '14,3%'],
     ],
     'def BB': [
       'vs 10% (3bb)',
@@ -283,7 +283,7 @@ const struct = {
     ],
     '!bonus': [
       ['3bet vs fish 20% RFI', 'Purple only IP vs passive fish (not on EP)'], 
-      ['overcall BB-SB vs fish', 'Purple: call only on BB']
+      ['overlimp on SB vs fish', 'Purple: isolate or limp']
     ],
   },
 }
