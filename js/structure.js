@@ -283,7 +283,7 @@ const struct = {
     ],
     '!bonus': [
       ['3bet vs fish 20% RFI', 'Purple only IP vs passive fish (not on EP)'], 
-      ['overlimp SB or overcall BB', 'Purple: call only on BB']
+      ['overcall on blinds', 'Overlimp on SB or overcall on BB with fish in pot <br> Purple: only overcall on BB'],
     ],
   },
 }
