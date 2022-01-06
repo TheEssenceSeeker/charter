@@ -200,7 +200,7 @@ const struct = {
       // 'sq reg+fish OOP', 
       // 'sq reg+fish IP', 
       'sq vs 10% OOP', 
-      'sq vs 15% OOP', 
+      'sq vs 15-20% OOP', 
       'sq vs 25% OOP', 
       'sq vs 45% OOP'
     ],
