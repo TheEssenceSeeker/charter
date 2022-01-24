@@ -154,8 +154,8 @@ const struct = {
       ['HJ 2,5bb', '19,5%'],
       ['CO 2,5bb', '26,7%'],
       ['BU 2,1bb', '41,8%-51,7% <br> Grey: vs sum of resteals &lt;30%'],
-      ['SB 3bb', '41,8%'],
-      ['SB 2,5bb fe65%+', '56,9%'],
+      ['SB 3bb', '41,8%-56,9% <br> Grey: vs fold to steal &gt;65% 2,5bb'],
+      // ['SB 2,5bb fe65%+', '56,9%'],
     ],
     '3bet IP': [
       ['3bet vs 10%', '4,4%'],
