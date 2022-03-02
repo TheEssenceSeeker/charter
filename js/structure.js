@@ -196,6 +196,11 @@ const struct = {
       ['vs 12%', 'Simplification: <br> AK, QQ-TT push (95bb)'],
       ['vs 14%', 'Simplification: <br> AK, QQ-99 push (95bb)']
     ],
+    "open 4bet": [
+      ['vs 5%', 'Green: call vs weak / 4bet vs good'],
+      ['vs 7%', 'Green: call vs weak / 4bet vs good'],
+      ['vs 10%', 'Green: call vs weak / 4bet vs good']
+    ],
     squeeze: [
       // 'sq reg+fish OOP', 
       // 'sq reg+fish IP', 
@@ -204,6 +209,7 @@ const struct = {
       'sq vs 25% OOP', 
       'sq vs 45% OOP'
     ],
+    
     
     // 'def vs 4bet': [
     //   'vs 1% IP',
