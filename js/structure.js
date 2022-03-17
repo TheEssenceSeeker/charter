@@ -188,6 +188,11 @@ const struct = {
       'vs 13% BvB',
       'vs 15% BvB',
     ],
+    isolate: [
+      ['10%', 'EP, BB (tight)'],
+      ['15%', 'MP, CO, SB, BB (loose), BB vs SB (standard) <br /> Green: only on CO'],
+      ['27%', 'BU']
+    ],
     'def vs squeeze': [
       ['vs 4%', 'AA 4bet, KK push (95bb)'],
       ['vs 6%', 'Simplification: <br> AKs, QQ call IP or push (95bb) OOP <br> AKo 4bet/fold'],
@@ -289,7 +294,7 @@ const struct = {
     ],
     '!bonus': [
       // ['3bet vs fish 20% RFI', 'Purple only IP vs passive fish (not on EP)'], 
-      ['3bet vs fish', 'Green vs passive IP <br /> Gray vs passive with deep stack IP <br> Purple fold vs aggro OOP and vs EP'], 
+      ['3bet vs fish', 'Green vs passive IP <br /> Gray vs passive with deep stack IP <br> Purple fold vs aggro OOP and EP-MP vs EP'], 
       ['overcall on blinds', 'Overlimp on SB or overcall on BB with fish in pot <br> Purple: only overcall on BB'],
     ],
   },
