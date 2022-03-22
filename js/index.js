@@ -10,6 +10,7 @@ const $donationModal = document.querySelector('#donationModal')
 const $donationModalClose = document.querySelector('.close')
 
 const $limit = document.querySelector('#limit')
+const $rand = document.querySelector('#rand')
 
 // Reading GET parameters
 const queryString = window.location.search
@@ -25,7 +26,10 @@ $limit.innerHTML = `<a href="?limit=${nextLimit}" data-next-limit=${
   '-&gt;' + nextLimit
 }>${limit}</a>`
 
+$rand.innerHTML = getRandomNumber().toString()
+
 // $limit.setAttribute('data-next-limit', nextLimit)
+function getRandomNumber() { return Math.floor(Math.random() * 100 + 1) }
 
 function setTheme(themeName, saveToLocalStorage = true) {
   if (!['light', 'dark'].includes(themeName)) {
@@ -55,6 +59,11 @@ $themeToggler.addEventListener('change', e => {
   } else {
     setTheme('light')
   }
+})
+
+// Random number generation logic
+window.addEventListener('click', event => {
+  $rand.innerHTML = getRandomNumber().toString()
 })
 
 // Hide chart on click
