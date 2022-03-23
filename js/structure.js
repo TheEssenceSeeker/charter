@@ -204,7 +204,7 @@ const struct = {
     "open 4bet": [
       ['vs 5%', 'Green: call vs weak / 4bet vs good'],
       ['vs 7%', 'Green: call vs weak / 4bet vs good'],
-      ['vs 10%', 'Green: call vs weak / 4bet vs good']
+      ['vs 10%', 'Green: call vs weak / 4bet vs good <br /> Gray: possible widening vs reg+fish']
     ],
     squeeze: [
       // 'sq reg+fish OOP', 
