@@ -149,8 +149,8 @@ const struct = {
     'Raise 1': [
       ['UTG 1 2,5bb', '8,8%'],
       ['UTG 2 2,5bb', '9,5%'],
-      ['UTG 3 2,5bb', '12,2%'],
-      ['LJ 2,5bb', '15,1%'],
+      ['UTG 3 (EP) 2,5bb', '12,2%'],
+      ['LJ (MP) 2,5bb', '15,1% <br /> Green: SH MP vs non-3bettors'],
       ['HJ 2,5bb', '19,5%'],
       ['CO 2,5bb', '26,7%'],
       ['BU 2,1bb', '41,8%-51,7% <br> Grey: vs sum of resteals &lt;30%'],
