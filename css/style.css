@@ -271,3 +271,28 @@ li.bonus ul {
   text-decoration: none;
   cursor: pointer;
 }
+
+.crypto b {
+  margin-right: 5px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.crypto img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 550px) {
+  .crypto, .crypto b {
+    font-size: 10px;
+  }
+
+}
+
