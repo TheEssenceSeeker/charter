@@ -28,7 +28,7 @@ body {
 
 .darktheme {
   --bgcolor: #323232;
-  --textcolor: #fff;
+  --textcolor: #ffffff;
   --highlightcolor: #2196f3;
   --hightlightedtextcolor: #fff;
   --donationbackground: greenyellow;
@@ -198,7 +198,7 @@ li.bonus ul {
 .rand {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 1px;
   font-size: 16px;
 }
 
