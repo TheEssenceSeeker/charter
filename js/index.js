@@ -1,3 +1,5 @@
+const DEFAULT_COLOR = "#2196f3"
+
 const $root = document.querySelector('#root')
 const $chart = document.querySelector('#chart')
 const $comment = document.querySelector('#comment')
@@ -12,6 +14,9 @@ const $donationModalClose = document.querySelector('.close')
 const $limit = document.querySelector('#limit')
 const $rand = document.querySelector('#rand')
 
+const $colorPicker = document.querySelector('#highlightcolor-picker')
+const $colorPickerWrapper = document.querySelector("#color-picker-wrapper");
+
 // Reading GET parameters
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
@@ -21,6 +26,14 @@ const structure = struct[limit]
 
 const limits = ['nl10', 'nl25', 'nl50']
 const nextLimit = limits[limits.indexOf(limit) + 1] || limits[0]
+
+document.addEventListener("DOMContentLoaded", () => {
+  const color = localStorage.getItem('color') || DEFAULT_COLOR
+
+  $colorPicker.value = color
+  changeColor(color)
+});
+
 
 $limit.innerHTML = `<a href="?limit=${nextLimit}" data-next-limit=${
   '-&gt;' + nextLimit
@@ -115,6 +128,26 @@ for (const [key, value] of Object.entries(structure)) {
 
   $root.appendChild($category)
 }
+
+// Color picker
+
+function changeColor(newColor) {
+  document.body.style.setProperty('--highlightcolor', newColor)
+  document.body.style.setProperty('--headertextcolor', newColor)
+  $colorPickerWrapper.style.backgroundColor = newColor
+}
+
+$colorPicker.addEventListener('input', (event) => {
+  const newColor = event.target.value
+  changeColor(newColor)
+  localStorage.setItem('color', newColor)
+})
+
+$colorPicker.addEventListener('contextmenu', (event) => {
+  event.preventDefault()
+  localStorage.removeItem('color')
+  changeColor(DEFAULT_COLOR)
+})
 
 // Donation modal
 

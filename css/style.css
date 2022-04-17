@@ -300,3 +300,17 @@ li.bonus ul {
 
 }
 
+input[type="color"] {
+	opacity: 0;
+	display: block;
+	width: 17px;
+	height: 17px;
+	border: none;
+  cursor: pointer;
+}
+#color-picker-wrapper {
+	float: left;
+  border-radius: 50%;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
