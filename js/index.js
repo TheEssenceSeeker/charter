@@ -83,6 +83,7 @@ window.addEventListener('click', event => {
 $chart.addEventListener('click', event => {
   $chartContainer.classList.add('hidden')
   $comment.classList.remove('visible')
+  removeActive()
 })
 
 // Print chart categories tree from structure.js
@@ -104,9 +105,7 @@ for (const [key, value] of Object.entries(structure)) {
     let $chartLink = document.createElement('li')
     $chartLink.innerHTML = chartName
     $chartLink.addEventListener('click', event => {
-      document
-        .querySelectorAll('.active')
-        .forEach(el => el.classList.remove('active'))
+      removeActive()
       event.target.classList.add('active')
       $chartContainer.classList.remove('hidden')
       $chart.src = `./charts/${limit}/${key}/${escape(chartName)}.png`
@@ -127,6 +126,12 @@ for (const [key, value] of Object.entries(structure)) {
   $category.appendChild($subList)
 
   $root.appendChild($category)
+}
+
+function removeActive() {
+  document
+  .querySelectorAll('.active')
+  .forEach(el => el.classList.remove('active'))
 }
 
 // Color picker
