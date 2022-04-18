@@ -11,5 +11,6 @@ function colorIsDark(color) {
 
   const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
 
-  return luma < 128
+  console.log(luma)
+  return luma < 135
 }
