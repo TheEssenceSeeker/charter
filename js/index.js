@@ -135,6 +135,8 @@ function changeColor(newColor) {
   document.body.style.setProperty('--highlightcolor', newColor)
   document.body.style.setProperty('--headertextcolor', newColor)
   $colorPickerWrapper.style.backgroundColor = newColor
+  console.log(colorIsDark(newColor))
+  document.documentElement.style.setProperty('--hightlightedtextcolor', colorIsDark(newColor) ? '#fff' : '#000')
 }
 
 $colorPicker.addEventListener('input', (event) => {

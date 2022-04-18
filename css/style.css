@@ -1,8 +1,11 @@
 :root {
   --bgcolor: #fff;
   --textcolor: #000;
-  --highlightcolor: cyan;
-  --hightlightedtextcolor: #000;
+  /* --highlightcolor: cyan; */
+  --highlightcolor: #2196f3;
+  /* --hightlightedtextcolor: #000; */
+  --hightlightedtextcolor: #fff;
+  --headertextcolor: #2196f3;
   --donationbackground: #000;
   --headertextcolor: #000;
 }
@@ -29,10 +32,7 @@ body {
 .darktheme {
   --bgcolor: #323232;
   --textcolor: #ffffff;
-  --highlightcolor: #2196f3;
-  --hightlightedtextcolor: #fff;
   --donationbackground: greenyellow;
-  --headertextcolor: #2196f3;
 }
 
 .darktheme .donation {
