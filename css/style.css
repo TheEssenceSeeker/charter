@@ -97,6 +97,7 @@ body {
 
 ul {
   margin: 0;
+  list-style: none
 }
 
 ul li {
@@ -104,6 +105,15 @@ ul li {
   font-weight: 600;
   padding: 0;
   margin: 0;
+}
+
+#root ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--textcolor); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 ul.subcats {
@@ -134,7 +144,7 @@ li.bonus {
 }
 
 li.bonus ul {
-  list-style-type: square;
+  /* list-style-type: square; */
 }
 
 .footer {
