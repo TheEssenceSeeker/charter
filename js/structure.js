@@ -207,12 +207,12 @@ const struct = {
       ['vs 10%', 'Green: call vs weak / 4bet vs good <br /> Gray: possible widening vs reg+fish']
     ],
     squeeze: [
-      // 'sq reg+fish OOP', 
-      // 'sq reg+fish IP', 
       'sq vs 10% OOP', 
       'sq vs 15-20% OOP', 
       'sq vs 25% OOP', 
-      'sq vs 45% OOP'
+      'sq vs 45% OOP',
+      ['sq reg+fish (SB) OOP', 'Sizing +1,5-2bb <br> Green: vs 10% <br> Grey: vs 15% <br> Yellow: vs 25% <br> Purple: vs 45%'],
+      ['sq reg+fish IP', 'Green: vs 10% <br> Orange: vs 12,5% <br> Grey: vs 15% <br> Yellow: vs 20%'],
     ],
     
     
