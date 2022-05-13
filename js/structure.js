@@ -265,10 +265,10 @@ const struct = {
     ],
     '3bet SB': [
       ['SB vs 10%', '4,1%'],
-      ['SB vs 15%', '5,4% <br /> Gray: possible widening vs isolate'],
-      ['SB vs 20%', '6,9% <br /> Gray: possible widening vs isolate'],
+      ['SB vs 15%', '5,4% <br /> Gray: possible widening vs isolate and F(iso)3bet 65%+'],
+      ['SB vs 20%', '6,9% <br /> Gray: possible widening vs isolate and F(iso)3bet 65%+'],
       ['SB vs 25%', '8,9%'],
-      ['SB vs 30%', '10,1% <br /> Gray: possible widening vs isolate'],
+      ['SB vs 30%', '10,1% <br /> Gray: possible widening vs isolate and F(iso)3bet 65%+'],
       ['SB vs 45%', '14,3%'],
     ],
     'def BB': [
